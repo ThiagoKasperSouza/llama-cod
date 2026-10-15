@@ -1,5 +1,4 @@
-# Arquitetura Pivotada: Ollama + Gemma3 + Node-TS + Vite + Vanilla TS + Tailwind
-
+# Chain of Drafts on local model
 ## Estrutura
 
 - `docker-compose.yml` — Ollama (Gemma3) via Docker
