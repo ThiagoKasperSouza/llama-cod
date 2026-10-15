@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.markdown { @apply leading-relaxed; }
+.markdown > *:first-child { margin-top: 0; }
+.markdown > *:last-child { margin-bottom: 0; }
+
+.markdown p { @apply my-2; }
+
+.markdown h1, .markdown h2, .markdown h3, .markdown h4 {
+  @apply font-semibold tracking-tight mt-4 mb-2;
+}
+.markdown h1 { @apply text-xl; }
+.markdown h2 { @apply text-lg; }
+.markdown h3 { @apply text-base; }
+
+.markdown ul { @apply list-disc pl-6 my-2; }
+.markdown ol { @apply list-decimal pl-6 my-2; }
+.markdown li { @apply my-1; }
+.markdown li > ul, .markdown li > ol { @apply my-1; }
+
+.markdown a { @apply text-emerald-400 underline underline-offset-2 hover:text-emerald-300; }
+
+.markdown strong { @apply font-semibold text-slate-50; }
+
+.markdown blockquote {
+  @apply border-l-4 border-emerald-500/40 pl-3 my-2 text-slate-300 italic;
+}
+
+.markdown code {
+  @apply font-mono text-[0.85em] bg-slate-900/80 text-amber-200 px-1.5 py-0.5 rounded;
+}
+
+.markdown pre {
+  @apply bg-slate-950 border border-slate-700/60 rounded-xl p-4 my-3 overflow-x-auto;
+}
+.markdown pre code { @apply bg-transparent p-0 text-slate-100 text-sm; }
+
+.markdown hr { @apply border-slate-700/60 my-4; }
+
+.markdown table { @apply w-full border-collapse my-3 text-sm; }
+.markdown th, .markdown td { @apply border border-slate-700/60 px-3 py-2 text-left; }
+.markdown th { @apply bg-slate-900/60 font-semibold; }
+
+.markdown input[type='checkbox'] { @apply mr-2 accent-emerald-500; }
